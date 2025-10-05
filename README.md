@@ -3,12 +3,13 @@ Django Events & Booking API
 This project is a Django REST Framework–based backend for managing events and bookings. 
 It includes user, event, and booking modules with CRUD functionality and clean API routing.
 
-Tech Stack
 
-Python
+**Tech Stack**
 
-Django
+- Python
 
-Django REST Framework
+- Django
 
-SQLite (default)
+- Django REST Framework
+
+- SQLite (default)
