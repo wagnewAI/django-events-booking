@@ -19,12 +19,10 @@ from django.urls import path, include
 from rest_framework import routers
 from events.views import EventViewSet
 from bookings.views import BookingViewSet
-from users.views import UserViewSet
 
 router = routers.DefaultRouter()
-router.register(r'events', EventViewSet, basename='event')
-router.register(r'bookings', BookingViewSet, basename='booking')
-router.register(r'users', UserViewSet, basename='user')
+router.register(r'events', EventViewSet)
+router.register(r'bookings', BookingViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
