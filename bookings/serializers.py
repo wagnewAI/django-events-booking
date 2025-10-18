@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .models import Booking
 from events.models import Event
 from decimal import Decimal
+from django.utils import timezone
 
 class BookingSerializer(serializers.ModelSerializer):
     user_username = serializers.ReadOnlyField(source='user.username')
