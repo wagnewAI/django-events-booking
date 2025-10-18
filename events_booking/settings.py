@@ -39,12 +39,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
      # Third-party
     'rest_framework',
-    
+    'rest_framework_simplejwt',
+    'django_filters',
+    'drf_yasg',
     # Local apps
     'users',
     'events',
     'bookings',
 ]
+
+AUTH_USER_MODEL = 'users.User' # If using custom user; otherwise remove and use default
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -81,8 +85,12 @@ WSGI_APPLICATION = 'events_booking.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Eventprojectdb',
+        'USER': 'Ethio',
+        'PASSWORD': 'ethio_12',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -94,6 +102,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny',
     ],
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
 }
 
 # Password validation
