@@ -1,0 +1,98 @@
+[
+  {
+    "model": "events.event",
+    "pk": 1,
+    "fields": {
+      "organizer": 1,
+      "title": "Tech Conference 2025",
+      "description": "AI and Cloud",
+      "location": "San Francisco",
+      "start_time": "2025-11-10T09:00:00Z",
+      "end_time": "2025-11-10T17:00:00Z",
+      "capacity": 300,
+      "price": "199.99",
+      "created_at": "2025-10-17T08:00:00Z",
+      "updated_at": "2025-10-17T08:00:00Z"
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 2,
+    "fields": {
+      "organizer": 2,
+      "title": "Music Festival",
+      "description": "Outdoor music",
+      "location": "Austin",
+      "start_time": "2025-12-05T12:00:00Z",
+      "end_time": "2025-12-05T22:00:00Z",
+      "capacity": 5000,
+      "price": "75.00",
+      "created_at": "2025-10-17T08:00:00Z",
+      "updated_at": "2025-10-17T08:00:00Z"
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 3,
+    "fields": {
+      "organizer": 3,
+      "title": "Startup Meetup",
+      "description": "Networking with startups",
+      "location": "New York",
+      "start_time": "2025-11-20T18:00:00Z",
+      "end_time": "2025-11-20T21:00:00Z",
+      "capacity": 150,
+      "price": "49.99",
+      "created_at": "2025-10-17T08:15:00Z",
+      "updated_at": "2025-10-17T08:15:00Z"
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 4,
+    "fields": {
+      "organizer": 2,
+      "title": "Art Expo",
+      "description": "Modern art exhibition",
+      "location": "Los Angeles",
+      "start_time": "2025-12-12T10:00:00Z",
+      "end_time": "2025-12-12T18:00:00Z",
+      "capacity": 800,
+      "price": "25.00",
+      "created_at": "2025-10-17T08:30:00Z",
+      "updated_at": "2025-10-17T08:30:00Z"
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 5,
+    "fields": {
+      "organizer": 1,
+      "title": "Gaming Convention",
+      "description": "Video games and esports",
+      "location": "Las Vegas",
+      "start_time": "2025-12-20T09:00:00Z",
+      "end_time": "2025-12-20T20:00:00Z",
+      "capacity": 2000,
+      "price": "99.99",
+      "created_at": "2025-10-17T08:45:00Z",
+      "updated_at": "2025-10-17T08:45:00Z"
+    }
+  },
+  {
+    "model": "events.event",
+    "pk": 6,
+    "fields": {
+      "organizer": 3,
+      "title": "Food Festival",
+      "description": "International cuisines",
+      "location": "Chicago",
+      "start_time": "2025-11-25T11:00:00Z",
+      "end_time": "2025-11-25T21:00:00Z",
+      "capacity": 1000,
+      "price": "40.00",
+      "created_at": "2025-10-17T09:00:00Z",
+      "updated_at": "2025-10-17T09:00:00Z"
+    }
+  }
+]

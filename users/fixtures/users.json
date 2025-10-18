@@ -1,0 +1,62 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "alice",
+      "email": "alice@example.com",
+      "password": "pbkdf2_sha256$260000$...$...",
+      "is_staff": true
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "username": "bob",
+      "email": "bob@example.com",
+      "password": "pbkdf2_sha256$260000$...$...",
+      "is_staff": false
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "username": "charlie",
+      "email": "charlie@example.com",
+      "password": "pbkdf2_sha256$260000$...$...",
+      "is_staff": false
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "username": "diana",
+      "email": "diana@example.com",
+      "password": "pbkdf2_sha256$260000$...$...",
+      "is_staff": false
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "username": "edward",
+      "email": "edward@example.com",
+      "password": "pbkdf2_sha256$260000$...$...",
+      "is_staff": false
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "username": "fiona",
+      "email": "fiona@example.com",
+      "password": "pbkdf2_sha256$260000$...$...",
+      "is_staff": false
+    }
+  }
+]
