@@ -1,9 +1,10 @@
-Django Events & Booking API
+** Django Events & Booking API**
+
 
 A Django REST Framework–based backend for managing users, events, and bookings.
 It supports authentication with JWT tokens, and provides clean, RESTful API endpoints for managing event creation, ticket bookings, and user profiles.
 
-🚀 Features
+** 🚀 Features ** 
 
 User registration, authentication (JWT)
 
