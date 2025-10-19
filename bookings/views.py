@@ -6,7 +6,7 @@ from .models import Booking
 from .serializers import BookingSerializer
 
 class BookingViewSet(viewsets.ModelViewSet):
-    queryset = Booking.objects.select_related('event', 'user')
+    queryset = Booking.objects.select_related("user","event").all()
     serializer_class = BookingSerializer
     permission_classes = [permissions.IsAuthenticated]
 
@@ -18,4 +18,5 @@ class BookingViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
+
 
