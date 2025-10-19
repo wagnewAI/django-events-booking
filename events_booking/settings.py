@@ -39,16 +39,17 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
      # Third-party
     'rest_framework',
-    'rest_framework_simplejwt',
+    #'rest_framework_simplejwt',
     'django_filters',
-    'drf_yasg',
+   # 'drf_yasg',
     # Local apps
     'users',
     'events',
     'bookings',
 ]
 
-AUTH_USER_MODEL = 'users.User' # If using custom user; otherwise remove and use default
+AUTH_USER_MODEL = 'users.User'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -86,10 +87,10 @@ WSGI_APPLICATION = 'events_booking.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Eventprojectdb',
-        'USER': 'Ethio',
+        'NAME': 'eventprojectdb',
+        'USER': 'ethio',
         'PASSWORD': 'ethio_12',
-        'HOST': 'localhost',
+        'HOST': '127.0.0.1',
         'PORT': '5432',
     }
 }

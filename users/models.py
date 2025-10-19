@@ -1,16 +1,14 @@
 from django.db import models
 
-# Create your models here
-from rest_framework import viewsets
-from rest_framework.permissions import IsAdminUser
-from .serializers import UserSerializer
 from django.contrib.auth.models import AbstractUser
-from django.contrib.auth import get_user_model
 
-User = get_user_model()
-class UserViewSet(viewsets.ModelViewSet):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
-    permission_classes = [IsAdminUser]
+
 class User(AbstractUser):
+    """
+    Custom user model extending Django's AbstractUser.
+    """
     email = models.EmailField(unique=True)
+    phone_number = models.CharField(max_length=20, blank=True, null=True)
+
+    def __str__(self):
+        return self.username

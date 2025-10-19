@@ -1,10 +1,15 @@
-
-from django.contrib.auth.models import User
-
-from rest_framework import viewsets, permissions
+from rest_framework import viewsets
+from rest_framework.permissions import IsAdminUser
+from django.contrib.auth import get_user_model
 from .serializers import UserSerializer
 
+User = get_user_model()
+
 class UserViewSet(viewsets.ModelViewSet):
-    queryset = User.objects.all().order_by("id")
+    """
+    Admin-only endpoint for viewing and managing users.
+    """
+    queryset = User.objects.all()
     serializer_class = UserSerializer
-    permission_classes = [permissions.IsAdminUser]  # only admin can list/create users via API
+    permission_classes = [IsAdminUser]
+

@@ -1,7 +1,8 @@
 from django.db import models
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 from django.utils import timezone
-
+User = get_user_model()
 class Event(models.Model):
     organizer = models.ForeignKey(User, on_delete=models.CASCADE, related_name="organized_events", null=True, blank=True)
     title = models.CharField(max_length=200)
