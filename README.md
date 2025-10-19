@@ -165,58 +165,7 @@ Body (JSON):
 Endpoint: POST http://127.0.0.1:8000/api/bookings/
 Body (JSON):
 
-{
-  "event": 1,
-  "user": 2,
-  "num_tickets": 3
-}
-
 5. Get Events / Bookings
 GET http://127.0.0.1:8000/api/events/
 GET http://127.0.0.1:8000/api/bookings/
 
-** project structure **
-django_event_booking/
-│
-├── events_booking/          # Main Django project folder (settings, URLs, WSGI/ASGI)
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-│
-├── events/                  # App for events
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── urls.py
-│   ├── views.py
-│   └── migrations/
-│       └── __init__.py
-│
-├── bookings/                # App for bookings
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── urls.py
-│   ├── views.py
-│   └── migrations/
-│       └── __init__.py
-│
-├── users/                   # App for users
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── urls.py
-│   └── views.py
-│
-├── manage.py                # Django management script
-├── requirements.txt         # Dependencies (optional but recommended)
-├── README.md                # Repo documentation
-└── .gitignore               # Git ignore file (to ignore venv, pycache, db.sqlite3, etc.)
